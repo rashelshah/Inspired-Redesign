@@ -13,9 +13,7 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  image-rendering: -webkit-optimize-contrast;
-  backface-visibility: hidden;
-  transform: translateZ(0);
+  will-change: transform;
 }
 
 .gradientOverlay {

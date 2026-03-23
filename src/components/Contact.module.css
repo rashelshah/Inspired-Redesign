@@ -25,6 +25,7 @@
   .formColumn {
     width: 60%;
   }
+
   .infoColumn {
     width: 40%;
   }
@@ -72,11 +73,13 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 700;
-  color: rgba(10, 20, 34, 0.6); /* primary/60 */
+  color: rgba(10, 20, 34, 0.6);
+  /* primary/60 */
   margin-bottom: 0.75rem;
 }
 
-.input, .textarea {
+.input,
+.textarea {
   width: 100%;
   background-color: var(--color-surface-container-lowest);
   border: none;
@@ -87,13 +90,17 @@
   font-family: var(--font-body);
 }
 
-.input:focus, .textarea:focus {
+.input:focus,
+.textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 1px rgba(125, 86, 45, 0.2); /* secondary/20 focus ring */
+  box-shadow: 0 0 0 1px rgba(125, 86, 45, 0.2);
+  /* secondary/20 focus ring */
 }
 
-.input::placeholder, .textarea::placeholder {
-  color: rgba(10, 20, 34, 0.2); /* primary/20 */
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(10, 20, 34, 0.2);
+  /* primary/20 */
 }
 
 .submitBtn {
@@ -157,7 +164,8 @@
   justify-content: center;
   gap: 0.75rem;
   background-color: #ffffff;
-  border: 1px solid rgba(197, 198, 204, 0.3); /* outline-variant/30 */
+  border: 1px solid rgba(197, 198, 204, 0.3);
+  /* outline-variant/30 */
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   color: var(--color-primary);
@@ -193,9 +201,11 @@
 
 .studioCard {
   padding: 2rem;
-  background-color: rgba(255, 202, 152, 0.1); /* secondary-container/10 */
+  background-color: rgba(255, 202, 152, 0.1);
+  /* secondary-container/10 */
   border-radius: 0.75rem;
-  border: 1px solid rgba(255, 202, 152, 0.2); /* secondary-container/20 */
+  border: 1px solid rgba(255, 202, 152, 0.2);
+  /* secondary-container/20 */
 }
 
 .studioTitle {
