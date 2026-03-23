@@ -1,16 +1,80 @@
-# React + Vite
+# Inspired Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Transforming Spaces Into Timeless Designs**
 
-Currently, two official plugins are available:
+Inspired Redesign is a premium interior design portfolio showcasing sophisticated spaces that blend comfort, style, and functionality. This project is built with a modern React stack, emphasizing clean aesthetics and a seamless user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dynamic Hero Section**: A visually stunning introduction with a clear call to action.
+- **Service Showcases**: Detailed breakdown of design expertise and offerings.
+- **Portfolio Gallery**: A curated display of previous interior design projects.
+- **Client Testimonials**: Real feedback from satisfied clients.
+- **Contact Integration**: An easy-to-use form for booking consultations.
+- **Responsive Design**: Optimized for all devices, from desktop to mobile.
+- **CSS Modules**: Scoped styling for better maintainability and performance.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite 8](https://vitejs.dev/)
+- **Styling**: Vanilla CSS with [CSS Modules](https://github.com/css-modules/css-modules)
+- **Icons**: React Icons (if applicable) / Custom SVG components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd inspired-redesign
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+### Building for Production
+
+Create an optimized production build:
+```bash
+npm run build
+```
+
+The output will be in the `dist/` directory.
+
+## 📁 Project Structure
+
+```text
+inspired-redesign/
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Images and global assets
+│   ├── components/      # React components and CSS Modules
+│   ├── App.jsx          # Main application component
+│   ├── App.css          # Global styles for App
+│   ├── index.css        # Base styles and reset
+│   └── main.jsx         # Entry point
+├── index.html           # Main HTML file
+└── vite.config.js       # Vite configuration
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
