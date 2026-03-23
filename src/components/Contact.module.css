@@ -1,0 +1,234 @@
+.contact {
+  padding: 8rem 2rem;
+  background-color: var(--color-surface-container-low);
+}
+
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.formColumn {
+  flex: 3;
+}
+
+@media (min-width: 768px) {
+  .formColumn {
+    width: 60%;
+  }
+  .infoColumn {
+    width: 40%;
+  }
+}
+
+.headline {
+  font-family: var(--font-headline);
+  font-size: 2.25rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .formRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: rgba(10, 20, 34, 0.6); /* primary/60 */
+  margin-bottom: 0.75rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  background-color: var(--color-surface-container-lowest);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(125, 86, 45, 0.2); /* secondary/20 focus ring */
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: rgba(10, 20, 34, 0.2); /* primary/20 */
+}
+
+.submitBtn {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  align-self: flex-start;
+}
+
+.submitBtn:hover {
+  filter: brightness(1.25);
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.subheadline {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-on-surface-variant);
+}
+
+.icon {
+  color: var(--color-secondary);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.callBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(197, 198, 204, 0.3); /* outline-variant/30 */
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.callBtn:hover {
+  background-color: var(--color-surface);
+}
+
+.whatsappBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: #25D366;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.whatsappBtn:hover {
+  opacity: 0.9;
+}
+
+.studioCard {
+  padding: 2rem;
+  background-color: rgba(255, 202, 152, 0.1); /* secondary-container/10 */
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 202, 152, 0.2); /* secondary-container/20 */
+}
+
+.studioTitle {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  color: var(--color-on-secondary-container);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.studioDesc {
+  color: var(--color-on-surface-variant);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.625;
+}
+
+.studioImageContainer {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.studioImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform 0.5s ease;
+}
+
+.studioImageContainer:hover .studioImage {
+  transform: scale(1.05);
+}

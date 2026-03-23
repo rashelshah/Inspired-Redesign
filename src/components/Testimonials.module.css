@@ -1,0 +1,89 @@
+.testimonials {
+  padding: 8rem 2rem;
+  background-color: var(--color-surface);
+}
+
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.eyebrow {
+  color: var(--color-secondary);
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.headline {
+  font-family: var(--font-headline);
+  font-size: 2.25rem;
+  color: var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--color-surface-container-low);
+  padding: 3rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(197, 198, 204, 0.1); /* outline-variant/10 */
+}
+
+.stars {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-secondary);
+}
+
+.starIcon {
+  font-variation-settings: 'FILL' 1;
+}
+
+.quote {
+  font-family: var(--font-body);
+  color: var(--color-on-surface);
+  font-style: italic;
+  margin-bottom: 2rem;
+  line-height: 1.625;
+}
+
+.clientName {
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.clientLocation {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-secondary);
+  margin: 0;
+}

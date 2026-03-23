@@ -1,0 +1,144 @@
+.whyChooseUs {
+  padding: 8rem 2rem;
+  background-color: var(--color-surface-container-highest);
+}
+
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.eyebrow {
+  color: var(--color-secondary);
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.headline {
+  font-family: var(--font-headline);
+  font-size: 2.25rem;
+  color: var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  color: var(--color-on-surface-variant);
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.625;
+  font-weight: 300;
+}
+
+.pointsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-secondary);
+  margin-top: 0.625rem;
+  flex-shrink: 0;
+}
+
+.pointTitle {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.pointDesc {
+  font-size: 0.875rem;
+  color: var(--color-on-surface-variant);
+  margin: 0;
+}
+
+.imageColumn {
+  flex: 1;
+  background-color: var(--color-surface-container-low);
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .imageColumn {
+    padding: 3rem;
+  }
+}
+
+.imageBox {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.badge {
+  display: none;
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .badge {
+    display: block;
+  }
+}
+
+.badgeNumber {
+  font-family: var(--font-headline);
+  font-size: 2.25rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.badgeText {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-on-primary-container);
+}
